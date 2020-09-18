@@ -19,10 +19,10 @@ import java.util.Scanner;
 			
 			switch (opcion) {
 			case 4: 
-				resultado = a + b;
+				sumar(a, b);
 				break;
 			case 3:
-				resultado = a - b;
+				sumar(a, b);
 				break;
 			case 2:
 				resultado = a * b;
@@ -35,11 +35,11 @@ import java.util.Scanner;
 			System.out.println("El resultado es " + resultado.toString());
 		}
 		
-		public Integer sumar(Integer a, Integer b) {
+		public static Integer sumar(Integer a, Integer b) {
 			return a + b;
 		}
 		
-		public Integer restar (Integer a, Integer b) {
+		public static Integer restar (Integer a, Integer b) {
 			return a - b;
 		}
 }
