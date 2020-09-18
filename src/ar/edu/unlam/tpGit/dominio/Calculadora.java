@@ -9,13 +9,13 @@ import java.util.Scanner;
 			Integer resultado;
 			Scanner teclado = new Scanner(System.in);
 			do{
-				System.out.println("Ingrese su operación /n 1 para sumar /n 2 para restar /n 3 para multiplicar /n 4 para dividir");
-				opcion = teclado.next();
-			}while(opcion < 1 && opcion > 4)
+				System.out.println("Ingrese su operación \n 1 para sumar \n 2 para restar \n 3 para multiplicar \n 4 para dividir");
+				opcion = teclado.nextInt();
+			}while(opcion < 1 && opcion > 4);
 				System.out.println("Ingrese el primer numero");
-			a = teclado.next();
+			a = teclado.nextInt();
 			System.out.println("Ingrese el segundo numero");
-			a = teclado.next();
+			a = teclado.nextInt();
 			
 			switch (opcion) {
 			case 4: 
@@ -33,5 +33,13 @@ import java.util.Scanner;
 			}
 			teclado.close();
 			System.out.println("El resultado es " + resultado.toString());
+		}
+		
+		public Integer sumar(Integer a, Integer b) {
+			return a + b;
+		}
+		
+		public Integer restar (Integer a, Integer b) {
+			return a - b;
 		}
 }
