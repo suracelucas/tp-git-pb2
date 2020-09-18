@@ -1,7 +1,7 @@
 package ar.edu.unlam.tpGit.dominio;
 
 import java.util.Scanner;
-	public class Ahorcado {
+	public class Calculadora {
 		public static void main(String[] args) {
 			Integer a;
 			Integer b;
@@ -25,13 +25,21 @@ import java.util.Scanner;
 				resultado = a - b;
 				break;
 			case 2:
-				resultado = a * b;
+				resultado = multiplicar(a, b);
 				break;
 			case 1:
-				resultado = a / b;
+				resultado = dividir(a, b);
 				break;
 			}
 			teclado.close();
 			System.out.println("El resultado es " + resultado.toString());
+		}
+		
+		public static Integer multiplicar(Integer a, Integer  b) {
+			return a * b;
+		}
+		
+		public static Integer dividir(Integer a, Integer  b) {
+			return a / b;
 		}
 }
